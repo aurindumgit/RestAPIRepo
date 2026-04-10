@@ -21,6 +21,9 @@ public class TraineeController {
 	@Autowired
 	TraineeService iTraineeRepository;
 	
+	
+	int rollno = 23;
+	
 	@GetMapping
 	List<Trainee> fetchAllTrainee() {
 		return iTraineeRepository.getAllTrainees();
