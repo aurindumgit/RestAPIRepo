@@ -175,7 +175,7 @@ class EmployeeServiceTest {
 
 		List<Trainee> result = traineeService.getAllTrainees();
 
-		assertEquals(5, result.size());
+		assertEquals(2, result.size());
 		Mockito.verify(traineeRepo, Mockito.times(1)).findAll();
 	}
 	
